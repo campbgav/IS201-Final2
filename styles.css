@@ -1,0 +1,57 @@
+/* Simple CSS for Scratch Page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 10px;
+}
+
+header {
+    background-color: #4682b4;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+main {
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+main h2 {
+    color: #4682b4;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #4682b4;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #f0f8ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

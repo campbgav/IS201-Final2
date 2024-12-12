@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joke Generator</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #1a1a2e, #16213e);
+            color: #ffffff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+            margin: 50px auto;
+            max-width: 600px;
+            background: rgba(15, 52, 96, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            color: #e94560;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        button {
+            background-color: #e94560;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #ff5a75;
+            transform: scale(1.1);
+        }
+
+        .joke {
+            margin: 20px 0;
+            font-size: 1.5em;
+            color: #ffffff;
+        }
+
+        footer {
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #e94560;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Random Joke Generator</h1>
+        <p class="joke">Click the button to get a joke!</p>
+        <button onclick="generateJoke()">Generate Joke</button>
+    </div>
+
+    <footer>
+        <a href="scratch.html">Back to Scratch Page</a>
+    </footer>
+
+    <script>
+        const jokes = [
+            "Why don't skeletons fight each other? They don't have the guts.",
+            "Why did the scarecrow win an award? Because he was outstanding in his field!",
+            "I told my wife she should embrace her mistakes. She gave me a hug.",
+            "How does a penguin build its house? Igloos it together!",
+            "Why did the bicycle fall over? Because it was two-tired!",
+            "Why don’t programmers like nature? It has too many bugs.",
+            "Why do cows wear bells? Because their horns don’t work.",
+            "How does a computer get drunk? It takes screenshots."
+        ];
+
+        function generateJoke() {
+            const randomIndex = Math.floor(Math.random() * jokes.length);
+            const jokeElement = document.querySelector('.joke');
+            jokeElement.textContent = jokes[randomIndex];
+        }
+    </script>
+</body>
+</html>
